@@ -6,7 +6,7 @@ const person = {
     lastName: "with us ",
   };
 
-  
+
   
   function greet(greeting) {
     console.log(`${greeting}, ${this.firstName} ${this.lastName}`);
@@ -18,3 +18,4 @@ const person = {
   const greetJavascript = greet.bind({ firstName: "javscript", lastName: "example" }, "Hi");
   greetJavascript(); 
   
+  console.log('test')
