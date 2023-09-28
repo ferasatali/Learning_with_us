@@ -5,9 +5,6 @@ const person = {
     firstName: "learn",
     lastName: "with us ",
   };
-
-
-  
   function greet(greeting) {
     console.log(`${greeting}, ${this.firstName} ${this.lastName}`);
   }
