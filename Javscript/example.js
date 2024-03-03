@@ -26,3 +26,6 @@ for (let i = 0; i < k; ) {
 }
 
 console.log(number, "number");
+
+
+

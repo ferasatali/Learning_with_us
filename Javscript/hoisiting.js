@@ -1,26 +1,25 @@
-console.log("<<<<<--------------Start-------------------->>>>>");
-console.log("Learn With Us");
 
-
-var sayHi = function() {
-  x=13
-  console.log(x);
-  console.log("Hi!");
-};
-
-sayHi(); 
-
-
-
-sayHello();
+// var x= 10; 
 
 function sayHello() {
+  console.log(x,'iner')
+  x = 10; 
   console.log(x)
   console.log("Hello, world!");
 }
-x = 13;
+
+sayHello();
+var x = 13;
+
+
+console.log(x,'inmjm');
+
 console.log(x);
-var x = 10;
+
+// var x = 10;
+
+
+
 console.log(x);
 
 console.log("<<<<<---------------End--------------------->>>>>");
