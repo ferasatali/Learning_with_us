@@ -1,21 +1,25 @@
 
-console.log("Learning With Us");
 
-const calculate = (a, b) => {
-    const sum = a + b;
-    const difference = a - b;
-    return sum * difference;
-  };
-  console.log(calculate(8, 3)); 
+function printName(x) {
+  console.log(x, "inner");
 
+  x = JSON.parse(JSON.stringify(x));
+  
+  x.name = "taqi";
+  x.f.a = "hey taqi";
 
-const learn = () => {
-    console.log('Hello, world!');
-    console.log('You Are Learning With Us');
-  };
-learn();
+  console.log(x, "inner after");
+}
 
+let name = {
+  name: "ali",
+  age: 20,
+  f: {
+    a: 1,
+    b: 2,
+  },
+};
 
-const add = (a, b) => a + b;
+printName(name);
 
-console.log(add(5, 7));
+console.log(name, "outer");
