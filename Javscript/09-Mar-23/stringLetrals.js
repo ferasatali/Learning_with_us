@@ -10,3 +10,4 @@ function stringLetrals(name) {
 console.log(stringLetrals("ferasat"));
 
 
+
