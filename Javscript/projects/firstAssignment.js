@@ -196,12 +196,12 @@ function GetStudentDataById(id) {
   let totalMarks = 0;
   let totalObtainedMarks = 0;
 
+  // => Another way to do this
   studentSubjects.forEach((subject) => {
     // studentSub.push(
     let sub = StudentEnrolledSubjects[subject]
       .filter((marks) => marks.studentId === id)
-      .map((marks, ind) => {
-        // console.log(marks, "marks");
+      .map((marks) => {
         totalMarks += marks.totalMarks;
         totalObtainedMarks += marks.marksGain;
         return {
@@ -210,10 +210,22 @@ function GetStudentDataById(id) {
           grade: marks.grade,
         };
       });
-
     studentSub.push(...sub);
   });
-  // console.log(studentSub);
+  // => Easy Way to do this
+  // studentSubjects.forEach((subject) => {
+  //   StudentEnrolledSubjects[subject].forEach((marks) => {
+  //     if (marks.studentId === id) {
+  //       studentSub.push({
+  //         subject: subject,
+  //         marksGain: `${marks.marksGain} / ${marks.totalMarks}`,
+  //         grade: marks.grade,
+  //       });
+  //       totalMarks += marks.totalMarks;
+  //       totalObtainedMarks += marks.marksGain;
+  //     }
+  //   });
+  // });
   return {
     ...obj,
     subjects: studentSub,
