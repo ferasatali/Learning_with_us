@@ -187,8 +187,11 @@ function GetStudentDataById(id) {
     (qualification) => qualification.studentId === id
   ); // Filter will always return an array
   // console.log(studentQualification);
-  const obj = { ...filteredStudent, qualification: studentQualification[0] };
-  // console.log(obj);
+  const firstStudentData = {
+    ...filteredStudent,
+    qualification: studentQualification[0],
+  };
+  // console.log(firstStudentData);
   const studentSubjects = Object.keys(StudentEnrolledSubjects);
 
   // console.log(studentSubjects);
@@ -227,7 +230,7 @@ function GetStudentDataById(id) {
   //   });
   // });
   return {
-    ...obj,
+    ...firstStudentData,
     subjects: studentSub,
     totalMarks: totalMarks,
     totalObtainedMarks: totalObtainedMarks,
