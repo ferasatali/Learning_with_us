@@ -20,12 +20,3 @@ function print(callback) {   // x1
 
 
 print(x1);  
-
-
-// line by line 
-// =>  taqi
- // x2, x1, x3
- // =>  wasif
- //  x2
- // x2,x1,x3
-
