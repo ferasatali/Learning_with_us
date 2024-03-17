@@ -14,7 +14,7 @@ function getFactorialFunction() {
         obj[number] = result;
         return result;
     }
-}
+}   
 
 
 let factorial = getFactorialFunction();
