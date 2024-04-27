@@ -10,7 +10,7 @@ function printName(number) {
 }
 
 console.log(printName(12))
-
+console.log("taqi");
 
 
 ((x) => {
