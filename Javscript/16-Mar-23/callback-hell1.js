@@ -10,6 +10,7 @@ function minus(a, b, c) {
 function mul(a, b, c) {
     c(a * b);
 }
+console.log('hety');
 
 
 sum(1, 2, (result, err) => {
