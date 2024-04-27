@@ -6,7 +6,7 @@ function x1(callback) { // x2
 }
 
 function x2(callback) {
-    console.log('x2');
+    console.log('wasif');
     callback(); //x3()
 }
 
