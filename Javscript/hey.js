@@ -1,7 +1,9 @@
-x = [1,2,3,4,5,566];
+const x = 2;
+const y = "2";
 
+if (x === y) {
+  console.log("x is equal to y");
+} else {
+  console.log("hey x is not equal to y");
+}
 
-r = x;
-r.push(6);
-console.log(x,'x');
-console.log(r,'r'); 

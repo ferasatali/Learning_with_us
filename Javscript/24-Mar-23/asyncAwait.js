@@ -62,13 +62,12 @@ async function x() {
         })
 
     console.log(12);
-
+    const x = 4*4;
     let y = await getUser(1);
-
+    const r = 5*11;
+       
     console.log(y, 'y');
 }
 
 x();
-
-
 
